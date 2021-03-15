@@ -6,10 +6,38 @@
     <style>
     body {
       background: rgb(15, 15, 15);
-      background-image: url('code.PNG');
+      background-image: url('../code.PNG');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
+      display: block;
+    }
+
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 51%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .videoWrapper2 {
+      position: relative;
+      padding-bottom: 59%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+    .videoWrapper2 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     .navbar {
       background-color: #333;
@@ -69,12 +97,17 @@
     </style>
   </head>
   <body>
-
+    <div class="videoWrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZGfrGGaFq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><br>
+    <div class="videoWrapper2">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hr2cBNikoLo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="navbar" id="myNavbar">
-      <a href="./index.html" class="active">Home</a>
-      <a href="./test.html">Test</a>
-      <a href="./videos.html">Videos</a>
-      <a href="./q.html">?</a>
+      <a href="../index.html">Home</a>
+      <a href="../test/index.html">Test</a>
+      <a href="../videos/index.html" class="active">Videos</a>
+      <a href="../q.html">?</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </body>
